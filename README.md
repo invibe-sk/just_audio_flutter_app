@@ -8,7 +8,7 @@ Credentials are:
 - **email:** test@test.sk
 - **password:** asdfasdf
 
-Please don't mind the missing images, the root api is set to test version. Audiofiles are present, that's what matters.
+Please don't mind the missing images, the root api url is set to test version. Audiofiles are present, that's what matters.
 
 Here are the steps captured in video:
 
