@@ -43,7 +43,7 @@ class Book {
             return AudioFile(
               name: json['files'][index]['name'],
               id: json['files'][index]['id'],
-              url: json['files'][index]['signed_url'],
+              url: json['files'][index]['url'],
               duration: json['files'][index]['duration'],
             );
           },

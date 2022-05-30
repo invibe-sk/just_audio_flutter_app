@@ -6,7 +6,7 @@ import 'package:knihy_audio_app_new/services/device_info.dart';
 import 'package:knihy_audio_app_new/services/service_locator.dart';
 
 class Api {
-  final String _baseUri = "https://knihy.audio.invibe.site/api";
+  final String _baseUri = "https://knihyaudio.invibe.site/api";
   final FlutterSecureStorage storage = const FlutterSecureStorage();
   static const String tokenKeyName = 'knihyaudio-personal-access-token';
   final DeviceInfo deviceInfo = getIt<DeviceInfo>();
@@ -40,12 +40,15 @@ class Api {
   }
 
   Future<http.Response> loginRequest({String? email, String? password}) async {
+
+    String deviceName = await deviceInfo.deviceName() ?? "";
+
     http.Response res = await http.post(
       _getUri("/login"),
       body: {
         'email': email ?? '',
         'password': password ?? '',
-        'device_name': deviceInfo.deviceName()
+        'device_name': deviceName,
       },
       headers: await _getHeaders(withAuth: false),
     );

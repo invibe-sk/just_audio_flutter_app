@@ -114,7 +114,7 @@ class MyAudioHandler extends BaseAudioHandler {
     return AudioSource.uri(
       Uri.parse(mediaItem.extras!['url']),
       tag: mediaItem,
-      // headers: {'test': 'test'},
+      headers: {'Authorization': 'Bearer $token'}, // everything works fine when this line is removed
     );
   }
 
