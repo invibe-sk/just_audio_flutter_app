@@ -2,6 +2,8 @@
 
 Basically the whole issue is described here: https://stackoverflow.com/questions/72425614/audiosource-uri-with-headers-not-working-when-app-is-locked-for-some-amount-of-t
 
+Here you will find videos and exact steps to reproduce this issue.
+
 The issue only happens on real iOS device - release and profile mode. Issue is not present when running iOS simulator.
 
 Credentials are:
