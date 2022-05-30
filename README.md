@@ -4,6 +4,12 @@ Basically the whole issue is described here: https://stackoverflow.com/questions
 
 The issue only happens on real iOS device - release and profile mode. Issue is not present when running iOS simulator.
 
+Credentials are:
+- **email:** test@test.sk
+- **password:** asdfasdf
+
+Please don't mind the missing images, the root api is set to test version. Audiofiles are present, that's what matters.
+
 Here are the steps captured in video:
 
 ## video 1
